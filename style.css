@@ -2,3 +2,11 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.question {
+  margin: 20px 0;
+}
+
+.buttons {
+  margin-top: 10px;
+}

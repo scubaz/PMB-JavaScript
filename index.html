@@ -2,14 +2,55 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Vehicle Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  Hello world
+  <!--This is the page header-->
+  <h1>Guess the Type of Vehicle You Drive</h1>
+  <!--Below is the markup for each question.  If you add more questions, you'll need to add more of these.  Can you think of any additional questions?-->
+  <div id="questions">
+    <div class="question" id="q1">
+      <p>Does your vehicle have four wheels?</p>
+      <div class="buttons">
+        <button onclick="answerQuestion(1, true)">Yes</button>
+        <button onclick="answerQuestion(1, false)">No</button>
+      </div>
+    </div>
+    <div class="question" id="q2" style="display:none;">
+      <p>Is your vehicle electric?</p>
+      <div class="buttons">
+        <button onclick="answerQuestion(2, true)">Yes</button>
+        <button onclick="answerQuestion(2, false)">No</button>
+      </div>
+    </div>
+    <div class="question" id="q3" style="display:none;">
+      <p>Is your vehicle large?</p>
+      <div class="buttons">
+        <button onclick="answerQuestion(3, true)">Yes</button>
+        <button onclick="answerQuestion(3, false)">No</button>
+      </div>
+    </div>
+    <div class="question" id="q4" style="display:none;">
+      <p>Does your vehicle have two wheels?</p>
+      <div class="buttons">
+        <button onclick="answerQuestion(4, true)">Yes</button>
+        <button onclick="answerQuestion(4, false)">No</button>
+      </div>
+    </div>
+    <div class="question" id="q5" style="display:none;">
+      <p>Is your vehicle powered by human force?</p>
+      <div class="buttons">
+        <button onclick="answerQuestion(5, true)">Yes</button>
+        <button onclick="answerQuestion(5, false)">No</button>
+      </div>
+    </div>
+  </div>
+  <div id="result" style="display:none;">
+    <h2 id="guess"></h2>
+  </div>
+  <!--Tells the script where to find the script.js file-->
   <script src="script.js"></script>
 </body>
 
